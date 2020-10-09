@@ -27,5 +27,13 @@ Front End: HTML, CSS
 
 Backend: Python
 
+## Browser
+Get best view experience with Chrome
+
+## Salient Features
+1. Responsive Design (Can be viewed on mobile as well as desktop pc)
+2. Able to handle exceptions
+3. End to End deployment
+
 ### Visit Website
 https://flipkartreviewscrapperbysimran.herokuapp.com/

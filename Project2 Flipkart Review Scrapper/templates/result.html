@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Scrapper | by Simran</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="main-background">
+        <div class="main-heading">
+            <h1>Flipkart Review Scrapper</h1>
+        </div>
+        <table class="upper">
+                    <tr>
+                        <td>Product Name</td>
+                        <td>{{prod_name}}</td>
+                    </tr>
+                    <tr>
+                        <td>Overall Rating</td>
+                        <td>{{overall_rating}}</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>{{price}}</td>
+                    </tr>
+        </table>
+
+        <table class="lower">
+            <div>
+               <caption>Reviews</caption>
+            </div>
+              <tr>
+                 <th>Rating</th>
+                 <th>Review Heading</th>
+                 <th>Overall Review</th>
+              </tr>
+                {% for review in reviews %}
+                  <tr>
+                     <td id="rate">{{review['rating']}}</td>
+                     <td>{{review['review_heading']}}</td>
+                     <td>{{review['overall_review']}} </td>
+                  </tr>
+                {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>

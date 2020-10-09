@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Scrapper | by Simran</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="main-background">
+        <div class="main-heading">
+            <h1>Flipkart Review Scrapper</h1>
+        </div>
+        <div class="form-class">
+            <form action="/review" method="post">
+                <div>
+                    <label for="query">Enter Product Name &nbsp;</label>
+                    <input type="text" name="query" id="query">
+                </div>
+                <div>
+                    <input type="submit" value="Check Reviews">
+                </div>
+
+            </form>
+        </div>
+     </div>
+</body>
+
+</html>

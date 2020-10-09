@@ -1,5 +1,5 @@
 # Flipkart-Review-Scrapper
-End to End application deployed on Heroku which scraps the reviews from Flipkart (shows only reviews of first page)
+End to End application deployed on Heroku which scraps the reviews from Flipkart (shows only reviews of first page) 
 
 ## Libraries Used
 1. beautifulsoup4
@@ -17,6 +17,8 @@ pip install flask
 pip install requests
 
 pip install lxml
+
+pip install gunicorn
 
 Alternatively,
 
